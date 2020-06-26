@@ -21,6 +21,5 @@
     "eject": "react-scripts eject",
     "postbuild": "rimraf build/**/*.map"
   },
-  "proxy": "https://trend-demo.herokuapp.com/",
-  "homepage": "./"
+  "proxy": "https://trend-demo.herokuapp.com/"
 }

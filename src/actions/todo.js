@@ -38,7 +38,7 @@ export const removeFromList = (text) => {
 export const fetchTodos = () => {
   return async (dispatch) => {
     try {
-      let todos = await axios.get(`https://jsonplaceholder.typicode.com/todos`)
+      let todos = await axios.get(`https://trend-demo.herokuapp.com/todos`)
       dispatch({
         type: "FETCH_TODOS",
         payload: todos

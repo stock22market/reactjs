@@ -1,21 +1,19 @@
-# React-redux-todo-starter-project
-## Contains the following:
-* React
-* Redux
-* React-Redux
-* React Router (`react-router-dom`)
-* Redux Form
-* Redux Thunk (A side-effect library that handles both synchronous and asynchronous action dispatches)
-* Redux Logger (A great logger tool to keep track of actions fired and updated state)
-* Also built to work with [Chrome Redux Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+# React Express Example
 
+This project offers a simple example of how to set up a React project with Create React App and how to connect this app with an Express backend. React-Router is also used for routing.
 
-To get started:
-```
-git clone https://github.com/johnazre/react-redux-todo-starter.git
-cd react-redux-todo-starter
-npm install OR yarn
-npm start OR yarn start
-```
+## Prerequisites
+In order to run this project node.js and npm both need to have been installed.
 
-There is one test currently failing in the App component, which should have been fixed by exporting the App component separately from the "connected" exported component. If you can fix that, send a PR.
+## Deployment
+<ol>
+<li>Clone this repo</li>
+<li>Run npm start from react-express-example to start the Express app</li>
+<li>Run npm start from the client directory to start the React app</li>
+<li>Visit http://localhost:3000/</li>
+</ol>
+
+## Built With
+* [React.js](https://reactjs.org/)
+* [Express.js](https://expressjs.com/)
+* [React-Router](https://reacttraining.com/react-router/core/guides/philosophy)

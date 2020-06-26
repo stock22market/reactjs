@@ -24,7 +24,5 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build"
-  },
-  "proxy":  "https://www.google.com/",
-  "homepage": "./"
+  }
 }

@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import {addToList} from './actions/todo';
+
+import TodoInput from './components/TodoInput'
+import TodoList from './components/TodoList/TodoList'
+
+export class App extends Component {
+
+  mySubmit(values) {
+    this.props.addToList(values.title)
+  }
+
+  render() {
+    return (
+      <div>
+        <TodoInput onSubmit={this.mySubmit.bind(this)}/>
+        <TodoList/>
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => bindActionCreators({ addToList }, dispatch)
+
+export default connect(null, mapDispatchToProps)(App);
